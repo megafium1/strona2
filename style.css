@@ -9,8 +9,9 @@
 .dark_mode {
   --headcol: #ff7b00;
   --seccol: #efa835;
-  --bgcolor: #414141;
+  --bgcolor: #393838;
   --main: #1b1b1b;
+
 }
 .dark_mode h1{
   color: black !important;
@@ -32,11 +33,16 @@ h1 {
   text-align: center;
   font-size: 2rem;
   height: 60px;
-  line-height: 160%;
+  line-height: 170%;
   border-bottom: solid 5px black;
   border-top: solid 5px black;
 }
-
+.dark_mode h1{
+  background-color: black;
+  border-bottom: solid 5px var(--seccol);
+  border-top: solid 5px var(--seccol);
+  color: var(--seccol) !important
+}
 h2{
   background-color: var(--seccol);
   padding: 20px;
@@ -48,11 +54,16 @@ h2{
   border-bottom: solid 5px black;
   border-top: solid 5px black;
 }
+.dark_mode h2{
+  background-color: black;
+  border-bottom: solid 5px var(--seccol);
+  border-top: solid 5px var(--seccol);
+  color: var(--seccol) !important
+}
 button {
   cursor: pointer;
-
-  /* klasy wiekszego fontu  */
 }
+  /* klasy wiekszego fontu  */
 
 .biger {
   font-size: 1.3rem;
@@ -69,6 +80,7 @@ button {
 
 .biger h2 {
   font-size: 2.5rem;
+  line-height: 1;
 }
 
 .biger .start mark {
@@ -94,7 +106,7 @@ header {
   overflow: hidden;
 }
 
-nav {
+nav:first-of-type {
   background-color: var(--seccol);
   padding: 15px;
   text-align: center;
@@ -102,8 +114,14 @@ nav {
   justify-content: center;
   max-height: 22px;
   width: 100%;
+  border-bottom: solid 5px black;
+  
 }
+.dark_mode nav{
+  background-color: black;
+  border-color: var(--seccol);
 
+}
 nav a {
   color: #000000;
   font-weight: bold;
@@ -112,7 +130,9 @@ nav a {
   min-width: 100px;
   text-align: center;
 }
-
+.dark_mode nav a{
+  color: var(--headcol);
+}
 #nav-sec {
   background-color: black;
   height: 15px;
@@ -150,9 +170,15 @@ footer {
   border-top: solid 5px black;
   box-sizing: border-box;
   display: flex;
+}
+.dark_mode footer{
+  border-color:  var(--headcol);
+  background-color: black;
+}
+.dark_mode footer img{
+filter: invert(1)
 
 }
-
 #ff4 {
   margin-top: 12px
 }
@@ -162,7 +188,10 @@ footer {
   margin-left: auto;
   margin-right: 30px;
   color: black;
+}
 
+.dark_mode #pol{
+  color: var(--headcol);
 }
 
 footer img {
