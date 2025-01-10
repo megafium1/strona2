@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moje prace 3D</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../img/logo.png" />
+  <style>
+    h2 {
+      border-top: none
+    }
+
+    .sec {
+      overflow: hidden;
+      height: 200px;
+      background-size: 100%;
+      background-position: center;
+      overflow: hidden;
+      transition: 1s ease-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #sec1 {
+      background-image: url(../img/przod.png);
+    }
+
+    #sec2 {
+      background-image: url(../img/place4.png);
+    }
+
+    #sec3 {
+      background-image: url(../img/test.krzywa.po.png);
+    }
+
+
+    .gra {
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
+      transition: 200ms ease;
+    }
+
+    section:hover .gra {
+      backdrop-filter: blur(0px);
+    }
+
+    section:hover .sec {
+      background-size: 120%;
+    }
+
+    section {
+      margin-top: 18.2vh;
+    }
+
+    section:first-of-type {
+      margin-top: 0px !important;
+    }
+
+    section a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      color: transparent;
+    }
+    html{
+  height: 100%;
+}
+    body{display: flex;
+    flex-direction: column;
+  min-height: 100%;}
+  footer{
+    margin-top: auto;
+  }
+   
+  </style>
+</head>
+
+<body onload="dark_mode()">
+  <header>
+    <nav>
+     
+      <a href="../index.html">Strona główna</a>
+      <a href="me.html">O mnie</a>
+      <a href="prace.html">Moje prace 3d</a>
+      <a href="kontakt.html">Kontakt</a>
+      <button onclick="dark_mode()" id="dark">A</button>
+      <button onclick="biger()" id="font">F</button>
+    </nav>
+    <nav id="nav-sec">
+      <div class="trail">
+        <a href="../index.html">Strona główna </a> <span>/</span>
+        <a href="prace.html">Moje prace 3d</a>
+      </div>
+    </nav>
+  </header>
+  <h1>Moje prace 3D</h1>
+  <section>
+    <a href="galeria1.html">
+      <div class="sec" id="sec1">
+        <div class="gra"></div>
+      </div>
+    </a>
+  </section>
+  <section>
+    <a href="galeria2.html">
+      <div class="sec" id="sec2">
+        <div class="gra"></div>
+      </div>
+    </a>
+  </section>
+  <section>
+    <a href="galeriavid.html">
+      <div class="sec" id="sec3">
+        <div class="gra"></div>
+      </div>
+    </a>
+  </section>
+
+  <footer>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/github.png"
+        alt=" link do mojego konta na githubie"></a>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/linkedin.png"
+        alt="link do mojego profilu na linkedin"></a>
+    <a href="kontakt.html" id="ff4"><img src="../img/ico/email.png" alt="bezpośredni kontakt"></a>
+    <a id="pol" href="polityka.html"> <span>Polityka prywatnosci</span></a>
+  </footer>
+  <script src="../cos.js"></script>
+  <div id="cokies">
+    <div id="accept">
+      <h3>Ta strona używa ciasteczek</h3>
+      <p id="pcook">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        qui optio vel voluptatum dolorem non vero est illum tempore debitis
+        sapiente possimus quam reiciendis ducimus ipsum libero repellat odio
+        quisquam!
+      </p>
+      <button onclick="cookies_yes(event)">zaakceptuj wszystkie</button>
+      <button class="cook" onclick="cookies_no(event)">tylko niezbędne</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O mnie</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/logo.png" />
+
+    <style>
+html{
+  height: 100%;
+}
+      body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      #me-wraper {
+        display: flex;
+        gap: 50px;
+      }
+
+      img {
+        max-width: 27%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .dark_mode p {
+        color: rgb(235, 235, 235);
+      }
+
+      .biger p {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        max-width: 60% !important;
+      }
+
+      footer {
+margin-top: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Strona głowna</a>
+        <a href="me.html">O mnie</a>
+        <a href="prace.html">Moje prace 3d</a>
+        <a href="kontakt.html">Kontakt</a>
+        <button onclick="dark_mode()" id="dark">A</button>
+        <button onclick="biger()" id="font">F</button>
+      </nav>
+      <nav id="nav-sec">
+        <div class="trail">
+          <a href="../index.html">Strona główna </a> <span>/</span>
+          <a href="me.html">O mnie</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="me-wraper">
+        <img src="../img/ja.jpg" alt="moje zdjecie" />
+        <div>
+          <p>O mnie !</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere
+            adipisci reprehenderit vitae eaque quidem laborum dolor cupiditate
+            et minus fugiat voluptate nostrum ea quo, ratione quibusdam
+            repellendus. Nulla, corrupti.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="placeholder.html" target="_blank"
+        ><img
+          src="../img/ico/github.png"
+          alt=" link do mojego konta na githubie"
+      /></a>
+      <a href="placeholder.html" target="_blank"
+        ><img
+          src="../img/ico/linkedin.png"
+          alt="link do mojego profilu na linkedin"
+      /></a>
+      <a href="kontakt.html" id="ff4"
+        ><img src="../img/ico/email.png" alt="bezpośredni kontakt"
+      /></a>
+      <a id="pol" href="polityka.html"> <span>Polityka prywatnosci</span></a>
+    </footer>
+    <div id="cokies">
+      <div id="accept">
+        <h3>Ta strona używa ciasteczek</h3>
+        <p id="pcook">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+          qui optio vel voluptatum dolorem non vero est illum tempore debitis
+          sapiente possimus quam reiciendis ducimus ipsum libero repellat odio
+          quisquam!
+        </p>
+        <button onclick="cookies_yes(event)">zaakcpetuj wszystkie</button>
+        <button class="cook" onclick="cookies_no(event)">
+          tylke niezbende
+        </button>
+      </div>
+    </div>
+    <script src="cos.js" defer></script>
+    <script src="../cos.js"></script>
+  </body>
+</html>

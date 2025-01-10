@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../img/logo.png" />
+  <style>
+    .dark_mode form {
+      color: rgb(235, 235, 235);
+
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      min-height: 60vh;
+      align-items: center;
+
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0px;
+    }
+
+    #con {
+      display: flex;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      gap: 50px;
+      width: 75%;
+      height: 420px;
+    }
+
+    #con_1 {
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      gap: 4px
+    }
+
+    textarea {
+      width: 45%;
+      height: 60%;
+      resize: none;
+      border-width: 3px;
+      border-color: grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin: 0px;
+    }
+
+    input {
+      border-radius: 5px;
+      border-style: solid;
+      border-color: rgb(48, 47, 47)
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: solid 2px rgb(48, 47, 47);
+      border: solid 3px var(--seccol);
+    }
+
+
+    #con_1 div {
+      display: flex;
+    }
+
+    #con_1 div input {
+      margin: 0px;
+      margin-left: 10px;
+    }
+
+    #name,
+    #email,
+    #sub,
+    #res,
+    #con_1 div {
+      margin-bottom: 20px
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Strona główna</a>
+      <a href="me.html">O mnie</a>
+      <a href="prace.html">Moje prace 3d</a>
+      <a href="kontakt.html">Kontakt</a>
+      <button onclick="dark_mode()" id="dark">A</button>
+      <button onclick="biger()" id="font">F</button>
+    </nav>
+    <nav id="nav-sec">
+      <div class="trail">
+        <a href="../index.html">Strona główna </a> <span>/</span>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <form id="con">
+      <div id="con_1">
+        <label for="name"> Imie </label>
+        <input type="text" id="name" placeholder="Jan" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="ktos@gmail.com" />
+        <div>
+          <label for="dane">zgoda na przetwarzanie danych osobowych</label>
+          <input type="checkbox" name="dane" id="dane">
+        </div>
+        <input id="res" type="reset" value="wyczyść" />
+        <input id="sub" type="submit" value="wyślij" />
+      </div>
+      <textarea name="masage" placeholder="text..."></textarea>
+    </form>
+    <div id="mso"></div>
+  </main>
+  <footer>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/github.png"
+        alt=" link do mojego konta na githubie"></a>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/linkedin.png"
+        alt="link do mojego profilu na linkedin"></a>
+    <a href="kontakt.html" id="ff4"><img src="../img/ico/email.png" alt="bezpośredni kontakt"></a>
+    <a id="pol" href="polityka.html"> <span>Polityka prywatnosci</span></a>
+
+  </footer>
+  <div id="cokies">
+    <div id="accept">
+      <h3>Ta strona używa ciasteczek</h3>
+      <p id="pcook">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        qui optio vel voluptatum dolorem non vero est illum tempore debitis
+        sapiente possimus quam reiciendis ducimus ipsum libero repellat odio
+        quisquam!
+      </p>
+      <button onclick="cookies_yes(event)">zaakcpetuj wszystkie</button>
+      <button class="cook" onclick="cookies_no(event)">
+        tylke niezbende
+      </button>
+    </div>
+  </div>
+  <script src="cos.js" defer></script>
+  <script src="../cos.js"></script>
+</body>
+
+</html>

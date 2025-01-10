@@ -1,0 +1,72 @@
+.dark_mode h1 {
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#main_gal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.gal {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  width: 800px;
+  scroll-margin: 50px;
+  padding: 2%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 50%);
+}
+.gal img {
+  width: 160px;
+  height: auto;
+  filter: brightness(0.4);
+  box-shadow: 0 0 0 2px white;
+}
+#selected {
+  width: 1200px;
+  height: auto;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.img-element {
+  height: 80px;
+  cursor: pointer;
+}
+#gal_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active {
+  filter: brightness(1) !important;
+  transform: scale(1.2);
+  transition: 200ms ease;
+}
+
+/* przycisk pełnego ekranu  */
+#full-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+#full-btn img {
+  width: 30px;
+}
+#selected-wrap {
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+}

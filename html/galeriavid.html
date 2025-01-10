@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../galeria.css">
+  <style>
+    main{
+      background-color: var(--bgcolor);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      
+      <a href="../index.html">Strona główna</a>
+      <a href="me.html">O mnie</a>
+      <a href="prace.html">Moje prace 3d</a>
+      <a href="kontakt.html">Kontakt</a>
+      <button onclick="dark_mode()" id="dark">A</button>
+      <button onclick="biger()" id="font">F</button>
+    </nav>
+    <nav id="nav-sec">
+      <div class="trail">
+        <a href="../index.html">Strona główna </a> <span>/</span> <a href="prace.html">Moje prace 3d</a> <span> / </span> <a href="galeriavid.html">Galeria</a>
+      </div>
+    </nav>
+  </header>
+  <h1>Galeria</h1>
+  <main id="gal_main">
+    <div id="selected-wrap">
+      <video id="Selected" controls>
+        <source src="../vid/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+   </main>
+   
+  <footer>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/github.png"
+        alt=" link do mojego konta na githubie"></a>
+    <a href="placeholder.html" target="_blank"><img src="../img/ico/linkedin.png"
+        alt="link do mojego profilu na linkedin"></a>
+        <a href="kontakt.html" id="ff4"><img src="../img/ico/email.png" alt="bezpośredni kontakt"></a>
+        <a id="pol" href="polityka.html"> <span>Polityka prywatnosci</span></a>
+
+  </footer>
+  <script src="../cos.js"></script>
+
+  <div id="cokies">
+    <div id="accept">
+      <h3>Ta strona używa ciasteczek</h3>
+      <p id="pcook">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        qui optio vel voluptatum dolorem non vero est illum tempore debitis
+        sapiente possimus quam reiciendis ducimus ipsum libero repellat odio
+        quisquam!
+      </p>
+      <button onclick="cookies_yes(event)">zaakcpetuj wszystkie</button>
+      <button class="cook" onclick="cookies_no(event)">tylke niezbende</button>
+    </div>
+  </div>
+</body>
+
+</html>

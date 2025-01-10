@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strona główna</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      background-color: var(--bgcolor);
+    }
+
+    .first {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      background-image: linear-gradient(45deg, white 50%, black 50%);
+      border-bottom: solid 15px rgb(255, 255, 255); 
+    }
+
+    .first_element {
+      min-width: 50%;
+    }
+
+    .first_element:first-of-type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+    }
+
+    .first_element:last-of-type {
+      background-color: transparent;
+    }
+
+    .start {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .start_element:first-of-type {
+      margin-left: -50px;
+    }
+
+    .start_element:last-of-type {
+      margin-left: 50px;
+    }
+
+    .start_element p {
+      text-align: left;
+      font-size: 1.6rem;
+      margin: 2px;
+    }
+
+    .start mark {
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 2.6rem;
+    }
+
+    #projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 400px 400px;
+      margin: 30px 15%;
+      grid-gap: 50px;
+      grid-template-areas: "a1 a2 a3" "b1 b2 b3"
+    }
+
+    /* #el1 {
+      grid-area: "a1";
+    }
+
+    #el2 {
+      grid-area: "a2";
+    }
+
+    #el3 {
+      grid-area: "a3";
+    }
+
+    #el4 {
+      grid-area: "b1";
+    }
+
+    #el5 {
+      grid-area: "b2";
+    }
+
+    #el6 {
+      grid-area: "b3";
+    } */
+
+    .grid-element {
+      background-color: rgb(99, 98, 98);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 5px;
+      color: white;
+     
+    }
+
+    .grid-element img {
+      width: 40%;
+      height: 40%;
+      object-fit:contain
+    }
+
+    .grid-element:hover {
+      transition: 100ms ease;
+      transform: scale(1.1);
+      background-color: rgb(52, 51, 51);
+    }
+
+    .grid-element-btn {
+      display: none;
+      position: absolute;
+      min-width: 35%;
+      height: 20%;
+
+      background-color: var(--headcol);
+      border: none;
+      border-radius: 5px;
+      font-size: 2rem;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+
+    .grid-element:hover .grid-element-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    .grid-element:hover img {
+      filter: blur(4px);
+    }
+
+    .grid-element p {
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Strona głowna</a>
+      <a href="html/me.html">O mnie</a>
+      <a href="html/prace.html">Moje prace 3d </a>
+      <a href="html/kontakt.html">Kontakt</a>
+      <button onclick="dark_mode()"  id="dark">A</button>
+      <button onclick="biger()" id="font">F</button>
+    </nav>
+    <nav id="nav-sec"></nav>
+  </header>
+  <main>
+    <section class="first">
+      <div class="first_element">
+        <div class="start">
+          <div class="start_element">
+            <mark>Web Developer</mark>
+            <p>Html CSS JS</p>
+          </div>
+          <div class="start_element">
+            <mark>Programista</mark>
+            <p>c++</p>
+          </div>
+          <div class="start_element">
+            <mark>Grafik 3d</mark>
+            <p>blender</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_element">
+      </div>
+    </section>
+    <section id="second">
+      <h2>Projekty przy których pracowałem</h2>
+      <div id="projects">
+        <div class="grid-element" id="el1">
+          <img src="img/pr1.svg" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="grid-element" id="el2">
+          <img src="img/pr2.webp" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="grid-element" id="el3">
+          <img src="img/pr3.webp" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="grid-element" id="el4">
+          <img src="img/pr4.svg" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="grid-element" id="el5">
+          <img src="img/pr5.svg" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="grid-element" id="el6">
+          <img src="img/pr6.svg" alt="">
+          <a href="html/placeholder.html" target="_blank" class="grid-element-btn">więcej</a>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="html/placeholder.html" target="_blank"><img src="img/ico/github.png" alt=" link do mojego konta na githubie"></a>
+    <a href="html/placeholder.html" target="_blank"><img src="img/ico/linkedin.png" alt="link do mojego profilu na linkedin"></a>
+    <a href="html/.kontakt.html" id="ff4"><img src="img/ico/email.png" alt="bezpośredni kontakt"></a>
+    <a id="pol" href="html/polityka.html"> <span>Polityka prywatnosci</span></a>
+ 
+  </footer>
+  <div id="cokies">
+    <div id="accept">
+      <h3>Ta strona używa ciasteczek</h3>
+      <p id="pcook">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        qui optio vel voluptatum dolorem non vero est illum tempore debitis
+        sapiente possimus quam reiciendis ducimus ipsum libero repellat odio
+        quisquam!
+      </p>
+      <button onclick="cookies_yes(event)">zaakcpetuj wszystkie</button>
+      <button class="cook" onclick="cookies_no(event)">
+        tylke niezbende
+      </button>
+    </div>
+  <script src="cos.js" defer></script>
+</body>
+
+</html>
