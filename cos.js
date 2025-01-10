@@ -68,6 +68,10 @@ document.addEventListener("DOMContentLoaded", function()
 
 let isciast;
 window.onload = function cookies(){
+     if (localStorage.getItem("wasclicked") === null) 
+    {
+        localStorage.setItem("wasclicked", "false");
+    };
   if (localStorage.getItem("wasclicked") === "true")
     {  document.getElementById("cokies").classList.add("nocookies");
 }
